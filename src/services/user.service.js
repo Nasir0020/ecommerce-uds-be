@@ -10,7 +10,6 @@ const createUser = async (userData)=>{
 
         const isUserExist=await User.findOne({email});
 
-
         if(isUserExist){
             throw new Error("user already exist with email : ",email)
         }

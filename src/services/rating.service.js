@@ -12,6 +12,7 @@ async function createRating(req, user) {
   });
   
   return await rating.save();
+  
 }
 
 async function getProductsRating(productId) {

@@ -10,6 +10,7 @@ const createRating= (req, res) => {
     
     res.status(202).json(rating);
   } catch (error) {
+    
     res.status(500).json({ error: 'Something went wrong' });
   }
 };

@@ -9,6 +9,7 @@ async function createProduct(reqData) {
     const topLavelCategory = new Category({
       name: reqData.topLavelCategory,
       level: 1,
+      
     });
 
     topLevel = await topLavelCategory.save();

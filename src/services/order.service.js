@@ -9,6 +9,7 @@ async function createOrder(user, shippAddress) {
     let existedAddress = await Address.findById(shippAddress._id);
     address = existedAddress;
   } else {
+
     address = new Address(shippAddress);
     address.user = user;
     await address.save();
